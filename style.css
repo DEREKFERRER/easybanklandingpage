@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Public Sans", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+.navigation{
+    display: flex; 
+    justify-content:space-around; 
+    align-items: center; 
+    background-color:  hsl(0, 0%, 98%); 
+
+}
+
+.menu{
+    display: none;
+}
+#nav {
+  
+    display: flex;
+    gap: 25px;
+  
+}
+
+#nav a {
+    color: black;
+    text-decoration: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+  position: relative;
+     
+}
+.nav_link {
+    display: flex;
+    gap: 25px;
+}
+.nav_link li{
+    list-style: none;
+    padding: 0;
+    
+}
+
+#nav a::before {
+    width: 0%;
+    bottom: 0px;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: hsl(136, 65%, 51%);
+}
+
+#nav a:hover::before{
+    width: 100%;
+}
+
+.nav_inviteButton{
+    background-color: hsl(136, 65%, 51%); 
+    border: none; 
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 20px; 
+    width: 130px; 
+    color: white;
+
+    text-align: center;
+    
+}
+
+.nav_inviteButton:hover{
+    opacity: 0.6;
+}
+
+
+.bg_intro {
+   /*  width: 690px; */
+    width: 900px;
+    position: relative;
+    bottom: 60px;
+    left: 0;
+    /* left: 43px; */
+  /*  right: 50; */
+}
+
+.bg_intro_mobile{
+    display: none;
+    
+}
+.mockup img{
+    width: 700px;
+    position: absolute;
+    /* z-index: 1; */
+ /*    bottom: 370px;
+    left: 44.5rem; */
+    bottom: 445px;
+    left: 48rem;
+}
+
+.container{
+    background-color:  hsl(220, 16%, 96%); 
+    position: relative;
+    overflow: hidden; 
+   /*  position: relative; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: start; 
+    align-items: center; 
+    gap: 50px; 
+    padding: 0 125px;
+    height: 100vh; */ 
+}
+.digitalBanking{
+   /*  width: 400px; */
+   /* position: relative; */
+   width: 100%;
+   display: flex;
+   align-items: center;
+   height: 100vh;
+   padding: 0 125px;
+   overflow: hidden; 
+}
+
+.digitalBanking h1{
+    line-height: 60px;
+     font-size: 3rem;
+}
+.digitalBanking p{
+    line-height: 25px; 
+    padding-bottom: 10px;
+}
+.digital_inviteButton{
+    background-color: hsl(136, 65%, 51%); 
+    border: none; 
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 20px; 
+    width: 130px; 
+    color: white;
+
+    text-align: center;
+}
+
+.digital_inviteButton:hover{
+/*     background-color: #ffffff; */
+    opacity: 0.6;
+}
+.middleLand{
+    background-color:  hsl(233, 8%, 62%); 
+    padding: 50px 124px;
+}
+.middle p{
+    line-height: 25px;
+    width: 570px;
+}
+.latest_articles{
+    background-color: hsl(220, 16%, 96%);
+     padding: 50px 124px;
+}
+.latest_articles h1{
+    padding-bottom: 10px;
+}
+.about{
+    display: flex; 
+    gap: 23.6px;
+     padding: 30px 0;
+}
+.ar{
+    display: flex; 
+    justify-content: center; 
+    gap: 30px;
+    
+}
+.article{
+    /* border:1px solid white;  */
+   
+    border-radius: 10px;
+     background-color: white; 
+    overflow: hidden;
+    width: 100%; 
+}
+
+.article img{
+   /*  width: 100%; */
+    height: 200px;
+    
+    /* object-fit: cover; */
+}
+/* .article span {
+    font-size: 0.7rem ;
+} */
+.article h3:hover{
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
+}
+.ewan{
+    font-size: 0.8em;
+    line-height: 1.2rem;
+    padding: 21.5px 21.1px 5px 21.1px ;
+}
+.footer{
+    background-color: hsl(233, 26%, 24%);
+    display: flex; 
+    justify-content:space-around;
+    padding: 50px ;
+    /*  
+      
+       padding: 50px 124px; */
+}
+.social_media{
+    padding-top: 50px;
+     display: flex;
+      justify-content: center; 
+      gap: 12px;
+}
+.social_media img:hover{
+    filter: brightness(0) saturate(100%) invert(79%) sepia(11%) saturate(3039%) hue-rotate(75deg) brightness(88%) contrast(88%);
+}
+.nav_footer{
+    display: flex;
+    gap: 100px;
+    padding-right: 100px;
+}
+.nav_footer_link{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px
+}
+.nav_footer a:hover{
+    color: hsl(136, 65%, 51%);
+}
+.nav_footer a{
+    color: white;
+    text-decoration: none;
+    /* display: block; */
+}
+.footer_button{
+    background-color: white;
+     border-radius: 20px;
+}
+.footer_inviteButton{
+    background-color: hsl(136, 65%, 51%); 
+    border: none; 
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 20px; 
+    width: 130px; 
+    color: white;
+
+    text-align: center;
+}
+
+.footer_inviteButton:hover{
+/*     background-color: #ffffff; */
+    opacity: 0.6;
+    
+}
+.trademark_{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: end;
+    gap: 25px;
+}
+
+.trademark_ p{
+    color: gray;
+}
+/*  and (max-width:900px) */
+/*tablet*/
+@media screen and (max-width:900px)  {
+
+}
+/* mobile */
+@media screen and (max-width:600px)  {
+    .navigation {
+       /*  display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+        padding: 20px; */
+      display: block;
+   
+    }
+  
+    #nav{
+        display: none;
+        position: absolute;
+        z-index: 1; 
+        width: 100%;
+      
+        /* z-index: 1; 
+        position: absolute; 
+        display: flex; */
+       /*  display: none;
+        margin: 20px; */
+        
+    /*     position: absolute;
+        background-color: white;
+        top: 90px;
+        left: 70px; */
+    }
+  
+    .wrapper {
+        /*   display: flex;
+          justify-content: space-between; */
+          display: flex;
+          justify-content: space-between;
+          padding: 20px;
+      }
+      #nav a{
+        padding-top: 0;
+        padding-bottom: 0;
+
+      }
+    .nav_link {
+       /*  display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0; */
+        background-color: white;
+        margin: 20px;
+        /* display: flex;
+          align-items: center;
+        flex-direction: column; */
+        text-align: center;
+        display: block;
+        border-radius: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      
+        -webkit-box-shadow: -3px 68px 113px -2px rgba(0,0,0,0.75);
+        -moz-box-shadow: -3px 68px 113px -2px rgba(0,0,0,0.75);
+        box-shadow: -3px 68px 113px -2px rgba(0,0,0,0.75);
+    }
+    .nav_link li{
+        list-style: none;
+    }
+    .nav_link li{
+        padding: 10px;
+    }
+    .nav_inviteButton{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+    .menu img{
+        height: 15px;
+    }
+    .bg_intro{
+        display: none;
+    }
+    .bg_intro_mobile{
+        display: block;
+       
+        /* width: 100%; */
+       /*  height: 300px; */
+    }
+    .bg_intro_mobile img{
+        width: 460px;
+        height: 320px;
+       /*  height: 550px; */
+    /*      object-position: 80% 100%; */
+      /*   position: relative; */
+      /*   object-fit: fill; */
+        /* bottom: 150px; */
+        object-fit: cover;
+    }
+    .mockup{
+       /* width: 100%; */
+       /* max-width: 100%;
+       height: auto; */
+        /* display: block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        bottom: 100px; */
+        /* display: none; */
+    }
+    .mockup img{
+        /* position: absolute; */
+        width: 100%;
+        /* height: 100%;
+        object-fit: cover; */
+        /* top: 0; */
+        left: 0;
+        bottom: 405px;
+       /*  bottom: 455px; */
+      /*   height: auto; */
+       /*  width: 100%; */
+    }
+    .container{
+        display:block;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        /* position: relative; */
+     
+   
+    }
+    .digitalBanking {
+        text-align: center;
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        position: relative;
+      /*   height: auto; */
+      height: 100%;
+    }
+    .digitalBanking h1{
+        line-height: 60px;
+         font-size: 2.5rem;
+    }
+    .hd{
+        /* position: relative; */
+       /*  padding-top: 8px;
+        padding-bottom: 100px; */
+        padding: 8px 15px 100px 15px;
+       
+    }
+    .middleLand{
+        padding: 0;
+        text-align: center;
+        padding: 20px 20px;
+    }
+    .middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .middle h1 {
+        width: 200px;
+    }
+    .middle p{
+        width: 100%;
+    }
+    .latest_articles{
+        padding: 80px 5px;
+    }
+    .latest_articles h1{
+        text-align: center;
+        padding-bottom: 15px;
+    }
+ 
+    .about{
+      /*  display: block;
+       text-align: center; */
+       display: flex;
+       flex-direction: column;
+    }
+    .ar{
+        display: flex;
+         flex-direction: column;
+        padding: 0px 20px;
+    }
+    .article img{
+         width: 100%;
+     }
+    
+    .footer{
+        display: block;
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .social_media{
+        padding-top: 20px;
+    }
+    .nav_footer{
+      /*   display: block; */
+       display: flex;
+       justify-content: center;
+       padding-top: 30px;
+       padding-bottom: 30px;
+  /*      gap: 0; */
+       padding-right: 0;
+    }
+    .nav_footer_link{
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .trademark_{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+     }
+     .footer_button{
+        background-color: white;
+        border-radius: 20px;
+        width: 129px;
+    }
+}
